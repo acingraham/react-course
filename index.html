@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Flatiron - React</title>
+
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+			.reveal h3 {
+				/*color: #5051DB;*/
+				/*color: #3887F7;*/
+			}
+
+			strong {
+				color: #5051DB;
+			}
+
+			.reveal section img {
+				max-height: 100vh;
+			}
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Intro to React</h3>
+					<hr>
+					<a href="" target="_blank">TODO - bit.ly/fh-react</a>
+					<!--
+					<hr>
+					<p>If you haven't already, consider installing these chrome plugins:</p>
+					<ul>
+						<li><a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_blank">React Chrome Plugin</a></li>
+						<li><a href="https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en" target="_blank">Redux Chrome Plugin</a></li>
+					</ul>
+					-->
+				</section>
+				<section>
+					<h3>Overview of the workshop</h3>
+					<ol>
+						<li>Intro to React (30-45 min)</li>
+						<li>React Exercises & Challenges (75-90 min)</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Intro to React</h3>
+				</section>
+				<section>
+					<h3>React</h3>
+					<ul>
+						<li>JavaScript library for building user interfaces</li>
+						<li>Primarily just the <strong>view</strong> layer</li>
+						<li>Encourages component-oriented architecture</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="img/react-twitter-pic.jpg">
+				</section>
+				<section>
+					<h3>Coding Environment - <a href="https://codesandbox.io" target="_blank">CodeSandbox.io</a></h3>
+					<iframe src="https://codesandbox.io/embed/yk3547q2lj" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+				</section>
+
+				<!--
+				<section>
+					<h3>Why use React?</h3>
+				</section>
+				<section>
+					<h3>Why not to use React?</h3>
+				</section>
+				-->
+				<section>
+					<section>
+						<h3>Hello World</h3>
+						<iframe src="https://codesandbox.io/embed/3v48mx2w75" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+					<section>
+                        <h3>Hello World</h3>
+                        <iframe src="https://codesandbox.io/embed/8xoj2r8wr9" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<h3>JSX</h3>
+					<ul>
+						<li>An extension of JavaScript</li>
+						<li>Allows us to write HTML-like code, but with the power of JavaScript</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+                        <h3>JSX allows HTML-like syntax that gets transformed into JavaScript</h3>
+                        <a href="https://babeljs.io/repl" target="_blank">Babel repl</a>
+                        <iframe src="https://codesandbox.io/embed/8xoj2r8wr9" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+					<section>
+						<p>Try taking your App function and copying and pasting it into the Babel repl</p>
+						<a href="https://babeljs.io/repl" target="_blank">Babel repl</a>
+						<iframe src="https://codesandbox.io/embed/8xoj2r8wr9" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<h3>Since JSX is an extension of JavaScript, it can also include JavaScript!</h3>
+				</section>
+
+				<section>
+					<section>
+                        <h3>We use curly braces to indicate we want JSX to evaluate a JavaScript expression</h3>
+                        <iframe src="https://codesandbox.io/embed/0535ppllw" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+					<section>
+						<iframe src="https://codesandbox.io/embed/38n5r601q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>We can also treat JSX as a JavaScript expression</h3>
+						<iframe src="https://codesandbox.io/embed/0p33zyp90n" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+					<section>
+						<iframe src="https://codesandbox.io/embed/ywk9lqp3kv" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<h3>Let's see some more JSX examples</h3>
+				</section>
+
+				<section>
+					<section>
+						<h3>Looping</h3>
+						<iframe src="https://codesandbox.io/embed/vj1oo6n035" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+					<section>
+						<iframe src="https://codesandbox.io/embed/6z121jnv33" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Array methods like <strong>map</strong></h3>
+						<iframe src="https://codesandbox.io/embed/ql47x79rw4" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+					<section>
+						<iframe src="https://codesandbox.io/embed/nj2jrlonp" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<p>Don't sweat it if some of the JSX code wasn't completely clear</p>
+					<p>It takes a bit of getting used to but eventually feels like any other JavaScript expression once you've played with it enough</p>
+				</section>
+
+				<section>
+                    <section>
+                        <h3>Composing components</h3>
+                        <p>Just like regular HTML elements, React components can be nested</p>
+                        <iframe src="https://codesandbox.io/embed/5y1o62ly6x" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                    </section>
+					<section>
+						<iframe src="https://codesandbox.io/embed/vnnnqrl9l7" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<h3>Props</h3>
+					<p>Allow us to pass data into our components, just like arguments to functions</p>
+				</section>
+
+				<section>
+					<section>
+						<h3>Props starter</h3>
+						<iframe src="https://codesandbox.io/embed/p30jqqzmj" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+
+					<section>
+						<iframe src="https://codesandbox.io/embed/x54q6yr6z" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<section>
+                        <h3>children prop</h3>
+                        <p>There's an additional special prop called <strong>children</strong> which is populated with any children elements of the component</p>
+						<iframe src="https://codesandbox.io/embed/5x3z9l4q3l" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                    </section>
+
+                    <section>
+                        <iframe src="https://codesandbox.io/embed/vmkm7ql9z7" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                    </section>
+				</section>
+
+				<section>
+					<p>So far we've been creating <strong>functional components</strong></p>
+					<p>These are <strong>stateless</strong> components that just take in props and returns a React element</p>
+				</section>
+
+				<section>
+					<p>If we want a component to maintain some local state, we'll need to use <strong>class components</strong></p>
+					<p>Let's see what a simple class component looks like</p>
+					<iframe src="https://codesandbox.io/embed/2knlz72vn" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+				</section>
+
+				<section>
+                    <section>
+                        <p>Let's convert a <strong>functional component</strong> to a <strong>class component</strong> to see how they're related</p>
+						<iframe src="https://codesandbox.io/embed/3qz1m6zo5q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                    </section>
+                    <section>
+                        <iframe src="https://codesandbox.io/embed/7k2ov31x4q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                    </section>
+                </section>
+
+				<section>
+					<p>Now let's try adding state to a component</p>
+				</section>
+
+				<section>
+					<p>Step 1 - start with a class component.  We're going to create a counter component.</p>
+					<iframe src="https://codesandbox.io/embed/kkvvxmrwv5" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+				</section>
+
+				<section>
+					<p>Step 2 - add a constructor method</p>
+					<iframe src="https://codesandbox.io/embed/84lq341279" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+				</section>
+
+				<section>
+					<p>Step 3 - initialize state in constructor method</p>
+					<iframe src="https://codesandbox.io/embed/6wq93ml8jn" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+				</section>
+
+				<section>
+					<p>Step 4 - access state in other methods</p>
+					<iframe src="https://codesandbox.io/embed/1444pw0j0q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+				</section>
+
+
+                <section>
+                    <p>Step 5 - update state</p>
+					<iframe src="https://codesandbox.io/embed/w0110l647w" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                </section>
+
+				<section>
+					<p>Some important notes on state</p>
+					<ul>
+						<li>Never mutate state directly except in the constructor</li>
+						<li>Instead, use setState to update state</li>
+						<li>With setState, the object you give it will be merged with the previous state</li>
+						<li>this.state and this.setState are available in all of your class component's methods</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Handling Events</h3>
+					<p>React provides us with <a href="https://reactjs.org/docs/events.html#supported-events" target="_blank">a number of event listeners</a></p>
+					<p>Let's take a look at their syntax</p>
+				</section>
+
+				<section>
+					<section>
+						<h3>Click Handler</h3>
+						<iframe src="https://codesandbox.io/embed/k3x77o0pjo" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+					<section>
+						<iframe src="https://codesandbox.io/embed/9zj71pw0v4" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+					<section>
+						<iframe src="https://codesandbox.io/embed/wq4jymr8kw" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>input & form elements</h3>
+						<iframe src="https://codesandbox.io/embed/4jvpz7l337" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+
+					<section>
+						<iframe src="https://codesandbox.io/embed/k3994x6x75" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					</section>
+				</section>
+
+
+				<section>
+					<h3>React Exercises & Challenges</h3>
+				</section>
+
+				<section>
+					<p>Consider reading this short step-by-step breakdown of how to build out your components:</p>
+					<p><a href="https://reactjs.org/docs/thinking-in-react.html" target="_blank">Thinking in React</a></p>
+				</section>
+
+				<section>
+					<p>For the exercises, consider using this starter codesandbox or any of the previous codesandbox examples</p>
+					<iframe src="https://codesandbox.io/embed/3v48mx2w75" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+				</section>
+
+				<section>
+					<p>For your first component, try creating a component with your name (e.g. &lt;Andrew /&gt;)</p>
+					<p>Have it display whatever represents you (a bold element?  marquee? an image?)</p>
+				</section>
+
+				<section>
+					<p>Update your component to take a prop in and use it to
+					<p>Have it display whatever represents you (a bold element?  marquee? an image?)</p>
+				</section>
+
+				<section>
+					<p><a href="http://sean-smith.me/assets/portfolio/25-react-projects/index.html" target="_blank">25 Potential React Projects</a></p>
+					<p><a href="https://design.flatiron.io" target="_blank">Try recreating an component from atrium</a></p>
+					<p>Try recreating a component you made in your own application</p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				],
+                history: true,
+			});
+		</script>
+	</body>
+</html>
