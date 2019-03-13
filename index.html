@@ -26,6 +26,7 @@
 			.reveal section img {
 				max-height: 100vh;
 			}
+
 		</style>
 
 		<!-- Printing and PDF exports -->
@@ -76,9 +77,10 @@
 				<section>
 					<img src="img/react-twitter-pic.jpg">
 				</section>
-				<section>
+				<section data-state="sandbox">
 					<h3>Coding Environment - <a href="https://codesandbox.io" target="_blank">CodeSandbox.io</a></h3>
-					<iframe src="https://codesandbox.io/embed/yk3547q2lj" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					<button class="load-btn">Click to load</button>
+					<iframe data-x="https://codesandbox.io/embed/yk3547q2lj" src="" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 				</section>
 
 				<!--
@@ -89,14 +91,18 @@
 					<h3>Why not to use React?</h3>
 				</section>
 				-->
-				<section>
+
+				<section data-state="sandbox">
 					<section>
 						<h3>Hello World</h3>
-						<iframe src="https://codesandbox.io/embed/3v48mx2w75" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/3v48mx2w75" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 					<section>
                         <h3>Hello World</h3>
-                        <iframe src="https://codesandbox.io/embed/8xoj2r8wr9" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+                        <iframe data-x="https://codesandbox.io/embed/8xoj2r8wr9" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 				</section>
 
@@ -108,16 +114,18 @@
 					</ul>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<section>
                         <h3>JSX allows HTML-like syntax that gets transformed into JavaScript</h3>
                         <a href="https://babeljs.io/repl" target="_blank">Babel repl</a>
-                        <iframe src="https://codesandbox.io/embed/8xoj2r8wr9" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+                        <iframe data-x="https://codesandbox.io/embed/8xoj2r8wr9" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 					<section>
 						<p>Try taking your App function and copying and pasting it into the Babel repl</p>
 						<a href="https://babeljs.io/repl" target="_blank">Babel repl</a>
-						<iframe src="https://codesandbox.io/embed/8xoj2r8wr9" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/8xoj2r8wr9" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 				</section>
 
@@ -125,23 +133,26 @@
 					<h3>Since JSX is an extension of JavaScript, it can also include JavaScript!</h3>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<section>
                         <h3>We use curly braces to indicate we want JSX to evaluate a JavaScript expression</h3>
-                        <iframe src="https://codesandbox.io/embed/0535ppllw" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+                        <iframe data-x="https://codesandbox.io/embed/0535ppllw" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 					<section>
-						<iframe src="https://codesandbox.io/embed/38n5r601q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/38n5r601q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 				</section>
-
-				<section>
+				<section data-state="sandbox">
 					<section>
 						<h3>We can also treat JSX as a JavaScript expression</h3>
-						<iframe src="https://codesandbox.io/embed/0p33zyp90n" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/0p33zyp90n" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 					<section>
-						<iframe src="https://codesandbox.io/embed/ywk9lqp3kv" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/ywk9lqp3kv" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 				</section>
 
@@ -149,23 +160,27 @@
 					<h3>Let's see some more JSX examples</h3>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<section>
 						<h3>Looping</h3>
-						<iframe src="https://codesandbox.io/embed/vj1oo6n035" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/vj1oo6n035" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 					<section>
-						<iframe src="https://codesandbox.io/embed/6z121jnv33" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/6z121jnv33" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<section>
 						<h3>Array methods like <strong>map</strong></h3>
-						<iframe src="https://codesandbox.io/embed/ql47x79rw4" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/ql47x79rw4" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 					<section>
-						<iframe src="https://codesandbox.io/embed/nj2jrlonp" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/nj2jrlonp" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 				</section>
 
@@ -174,14 +189,16 @@
 					<p>It takes a bit of getting used to but eventually feels like any other JavaScript expression once you've played with it enough</p>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
                     <section>
                         <h3>Composing components</h3>
                         <p>Just like regular HTML elements, React components can be nested</p>
-                        <iframe src="https://codesandbox.io/embed/5y1o62ly6x" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+                        <iframe data-x="https://codesandbox.io/embed/5y1o62ly6x" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                     </section>
 					<section>
-						<iframe src="https://codesandbox.io/embed/vnnnqrl9l7" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/vnnnqrl9l7" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 				</section>
 
@@ -190,26 +207,30 @@
 					<p>Allow us to pass data into our components, just like arguments to functions</p>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<section>
 						<h3>Props starter</h3>
-						<iframe src="https://codesandbox.io/embed/p30jqqzmj" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/p30jqqzmj" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 
 					<section>
-						<iframe src="https://codesandbox.io/embed/x54q6yr6z" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/x54q6yr6z" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<section>
                         <h3>children prop</h3>
                         <p>There's an additional special prop called <strong>children</strong> which is populated with any children elements of the component</p>
-						<iframe src="https://codesandbox.io/embed/5x3z9l4q3l" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/5x3z9l4q3l" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                     </section>
 
                     <section>
-                        <iframe src="https://codesandbox.io/embed/vmkm7ql9z7" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+                        <iframe data-x="https://codesandbox.io/embed/vmkm7ql9z7" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                     </section>
 				</section>
 
@@ -218,19 +239,22 @@
 					<p>These are <strong>stateless</strong> components that just take in props and returns a React element</p>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<p>If we want a component to maintain some local state, we'll need to use <strong>class components</strong></p>
 					<p>Let's see what a simple class component looks like</p>
-					<iframe src="https://codesandbox.io/embed/2knlz72vn" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					<button class="load-btn">Click to load</button>
+					<iframe data-x="https://codesandbox.io/embed/2knlz72vn" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
                     <section>
                         <p>Let's convert a <strong>functional component</strong> to a <strong>class component</strong> to see how they're related</p>
-						<iframe src="https://codesandbox.io/embed/3qz1m6zo5q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/3qz1m6zo5q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                     </section>
                     <section>
-                        <iframe src="https://codesandbox.io/embed/7k2ov31x4q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+                        <iframe data-x="https://codesandbox.io/embed/7k2ov31x4q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                     </section>
                 </section>
 
@@ -238,30 +262,35 @@
 					<p>Now let's try adding state to a component</p>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<p>Step 1 - start with a class component.  We're going to create a counter component.</p>
-					<iframe src="https://codesandbox.io/embed/kkvvxmrwv5" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					<button class="load-btn">Click to load</button>
+					<iframe data-x="https://codesandbox.io/embed/kkvvxmrwv5" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<p>Step 2 - add a constructor method</p>
-					<iframe src="https://codesandbox.io/embed/84lq341279" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					<button class="load-btn">Click to load</button>
+					<iframe data-x="https://codesandbox.io/embed/84lq341279" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<p>Step 3 - initialize state in constructor method</p>
-					<iframe src="https://codesandbox.io/embed/6wq93ml8jn" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					<button class="load-btn">Click to load</button>
+					<iframe data-x="https://codesandbox.io/embed/6wq93ml8jn" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<p>Step 4 - access state in other methods</p>
-					<iframe src="https://codesandbox.io/embed/1444pw0j0q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					<button class="load-btn">Click to load</button>
+					<iframe data-x="https://codesandbox.io/embed/1444pw0j0q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 				</section>
 
 
-                <section>
+                <section data-state="sandbox">
                     <p>Step 5 - update state</p>
-					<iframe src="https://codesandbox.io/embed/w0110l647w" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					<button class="load-btn">Click to load</button>
+					<iframe data-x="https://codesandbox.io/embed/w0110l647w" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                 </section>
 
 				<section>
@@ -280,27 +309,32 @@
 					<p>Let's take a look at their syntax</p>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<section>
 						<h3>Click Handler</h3>
-						<iframe src="https://codesandbox.io/embed/k3x77o0pjo" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/k3x77o0pjo" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 					<section>
-						<iframe src="https://codesandbox.io/embed/9zj71pw0v4" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/9zj71pw0v4" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 					<section>
-						<iframe src="https://codesandbox.io/embed/wq4jymr8kw" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/wq4jymr8kw" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<section>
 						<h3>input & form elements</h3>
-						<iframe src="https://codesandbox.io/embed/4jvpz7l337" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/4jvpz7l337" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 
 					<section>
-						<iframe src="https://codesandbox.io/embed/k3994x6x75" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/k3994x6x75" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
 				</section>
 
@@ -314,9 +348,10 @@
 					<p><a href="https://reactjs.org/docs/thinking-in-react.html" target="_blank">Thinking in React</a></p>
 				</section>
 
-				<section>
+				<section data-state="sandbox">
 					<p>For the exercises, consider using this starter codesandbox or any of the previous codesandbox examples</p>
-					<iframe src="https://codesandbox.io/embed/3v48mx2w75" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+					<button class="load-btn">Click to load</button>
+					<iframe data-x="https://codesandbox.io/embed/3v48mx2w75" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 				</section>
 
 				<section>
@@ -340,6 +375,8 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="node_modules/jquery/dist/jquery.js"></script>
+		<script src="js/script.js"></script>
 
 		<script>
 			// More info about config & dependencies:
