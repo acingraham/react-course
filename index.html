@@ -57,18 +57,10 @@
 				<section>
 					<h3>Overview of the workshop</h3>
 					<ol>
-						<li>Intro to React (60 min)</li>
-						<li>Q&A / React Exercises & Challenges (60 min)</li>
+						<li>Intro to React (90 min)</li>
+						<!-- <li>Q&A / React Exercises & Challenges (60 min)</li> -->
+						<li>Q&A (30 min)</li>
 					</ol>
-				</section>
-
-				<section>
-					<h3>React Pros</h3>
-					<ul>
-						<li>Blake Tan</li>
-						<li>Jesse Lee</li>
-						<li>Oleksii Sarii</li>
-					</ul>
 				</section>
 
 				<section>
@@ -127,7 +119,7 @@
 				<section data-state="sandbox">
 					<section>
                         <h3>JSX allows HTML-like syntax that gets transformed into JavaScript</h3>
-                        <a href="https://babeljs.io/repl" target="_blank">Babel repl</a>
+                        <div><a href="https://babeljs.io/repl" target="_blank">Babel repl</a></div>
 						<button class="load-btn">Click to load</button>
                         <iframe data-x="https://codesandbox.io/embed/8xoj2r8wr9" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
@@ -249,13 +241,47 @@
 					<p>These are <strong>stateless</strong> components that just take in props and returns a React element</p>
 				</section>
 
-				<!-- <section data-state="sandbox">
-					<p>If we want a component to maintain some local state, we'll need to use <strong>class components</strong></p>
-					<p>Let's see what a simple class component looks like</p>
-					<button class="load-btn">Click to load</button>
-					<iframe data-x="https://codesandbox.io/embed/2knlz72vn" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+				<section>
+					<p>There are a number of ways to allow our components to maintain local state, but the 2 most common you'll see are:</p>
+					<ul>
+						<li>Class Components</li>
+						<li>Hooks</li>
+					</ul>
 				</section>
 
+				<section>
+					<h3>Class Components</h3>
+					<hr />
+					<ul>
+						<li>Standard way to introduce state and lifecycle hooks before the introduction of Hooks in React 16.8</li>
+						<li>Covering briefly here as you're likely to come across them in Flatiron code</li>
+					</ul>
+				</section>
+
+				<section data-state="sandbox">
+					<section>
+						<p>Let's see what a simple class component looks like</p>
+						<button class="load-btn">Click to load</button>
+						<!--<iframe data-x="https://codesandbox.io/embed/2knlz72vn" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>-->
+						<iframe data-x="https://codesandbox.io/embed/class-component-forked-fq9hh?fontsize=14&hidenavigation=1&theme=dark"
+							style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+							title="class component (forked)"
+							allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+							sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+						></iframe>
+					</section>
+					<section>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/class-component-forked-ifzwr?fontsize=14&hidenavigation=1&theme=dark"
+							style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+							title="class component (forked)"
+							allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+							sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+						></iframe>
+					</section>
+				</section>
+
+				<!--
 				<section data-state="sandbox">
                     <section>
                         <p>Let's convert a <strong>functional component</strong> to a <strong>class component</strong> to see how they're related</p>
@@ -267,8 +293,17 @@
                         <iframe data-x="https://codesandbox.io/embed/7k2ov31x4q" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                     </section>
 				</section>
-			-->
+				-->
 
+				<section>
+					<h3>Hooks</h3>
+					<hr />
+					<ul>
+						<li>Introduced in React 16.8</li>
+						<li>Intended to solve a variety of seemingly unrelated problems (which we cover in more detail in the React Hooks Flatiron University course)</li>
+						<li>Functions that let you “hook into” React state and lifecycle features from functional components</li>
+					</ul>
+				</section>
 				<section>
 					<p>Now let's try adding state to a component using React Hooks</p>
 				</section>
@@ -284,6 +319,15 @@
 						<button class="load-btn">Click to load</button>
 						<iframe data-x="https://codesandbox.io/embed/counter-complete-j4te6" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 					</section>
+				</section>
+
+				<section>
+					<h3>useState</h3>
+					<hr>
+					<ul>
+						<li>returns an array, with the first element the current value and the second a function for setting the value</li>
+						<li>takes a single argument for the initial state. This can be any type / value you like.</li>
+					</ul>
 				</section>
 
 				<!--
@@ -370,16 +414,42 @@
 				</section>
 				-->
 
-				<section>
-					<h3>React Exercises & Challenges</h3>
-				</section>
-
 				<section data-state="sandbox">
 					<section>
 						<h3>Combine useState and clickHandler</h3>
 						<button class="load-btn">Click to load</button>
-						<iframe data-x="https://codesandbox.io/s/input-starter-mznwq" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+						<iframe data-x="https://codesandbox.io/embed/input-starter-forked-ngwpe?fontsize=14&theme=dark"
+							style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+							allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+							sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+						></iframe>
 					</section>
+
+					<section>
+						<button class="load-btn">Click to load</button>
+						<iframe data-x="https://codesandbox.io/embed/input-starter-forked-6yutg?fontsize=14&hidenavigation=1&theme=dark"
+							style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+							allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+							sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+						></iframe>
+					</section>
+				</section>
+
+				<section>
+					<h3>Q&A</h3>
+					<hr />
+					<p>Some potential topics:</p>
+					<ul>
+						<li>Breaking a feature into components</li>
+						<li>State management</li>
+						<li>Lifecycle features</li>
+						<li>Tooling</li>
+					</ul>
+				</section>
+
+				<!--
+				<section>
+					<h3>React Exercises & Challenges</h3>
 				</section>
 
 				<section>
@@ -408,6 +478,7 @@
 					<p><a href="https://design.flatiron.io" target="_blank">Try recreating an component from atrium</a></p>
 					<p>Try recreating a component you made in your own application</p>
 				</section>
+				-->
 			</div>
 
 		</div>
